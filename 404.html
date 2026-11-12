@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DMO Hub ย้ายไปที่ dmo-hub.pages.dev</title>
+<meta name="robots" content="noindex">
+<script>
+// GitHub Pages serves this for any path without a file, so old deep links
+// (/dmo/<page>, /dmo/<data>.json, ?query, #hash) keep their path on the new host.
+(function () {
+  var base = "https://dmo-hub.pages.dev";
+  var m = location.pathname.match(/^\/dmo(\/.*)?$/);
+  var rest = m && m[1] ? m[1] : "/";
+  location.replace(base + rest + location.search + location.hash);
+})();
+</script>
+</head>
+<body>
+<p>เว็บย้ายไปที่ <a href="https://dmo-hub.pages.dev/">https://dmo-hub.pages.dev/</a></p>
+</body>
+</html>
